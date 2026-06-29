@@ -1,0 +1,36 @@
+{
+    "pointing": {
+        "mode": "mouse",
+        "action": "move"
+    },
+
+    "pinch": {
+        "mode": "mouse",
+        "action": "left_click"
+    },
+
+    "peace": {
+        "mode": "mouse",
+        "action": "right_click"
+    },
+
+    "fist": {
+        "mode": "mouse",
+        "action": "drag"
+    },
+
+    "thumbs_up": {
+        "mode": "shortcut",
+        "action": "open_browser"
+    },
+
+    "three": {
+        "mode": "shortcut",
+        "action": "copy"
+    },
+
+    "four": {
+        "mode": "shortcut",
+        "action": "paste"
+    }
+}

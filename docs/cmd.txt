@@ -1,0 +1,4 @@
+
+# active venv
+    
+(Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned) ; (& c:\Users\palli\Downloads\gesture_ai\.venv\Scripts\Activate.ps1)
