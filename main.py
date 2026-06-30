@@ -252,7 +252,7 @@ class GesturePlatform:
         """
         Starts frame execution threads and coordinates the dispatch pipeline.
         """
-        cap = cv2.VideoCapture(0)
+        cap = cv2.VideoCapture(1)
         if not cap.isOpened():
             print("Error: Could not open the webcam.")
             return

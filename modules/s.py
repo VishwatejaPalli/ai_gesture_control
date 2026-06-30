@@ -1,2 +1,11 @@
-import cv2
-cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)   # Windows
+import torch
+
+checkpoint = torch.load(
+    "models/best_model.pth",
+    map_location="cpu"
+)
+
+print(type(checkpoint))
+
+if isinstance(checkpoint, dict):
+    print(checkpoint.keys())
