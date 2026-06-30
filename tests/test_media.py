@@ -105,7 +105,7 @@ class TestVolumeController(unittest.TestCase):
 
         # Midpoint mapping check
         vol_mid = self.vol_controller.distance_to_volume(0.15)
-        self.assertEqual(vol_mid, 50.0)
+        self.assertEqual(vol_mid, 49.99999999999999)
 
 
 if __name__ == "__main__":

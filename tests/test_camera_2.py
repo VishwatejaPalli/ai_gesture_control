@@ -1,5 +1,15 @@
-import cv2
 
+import sys
+import os
+
+ROOT = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), "..")
+)
+
+if ROOT not in sys.path:
+    sys.path.insert(0, ROOT)
+import cv2
+from core.hand_tracker import HandTracker
 from core.hand_tracker import HandTracker
 from core.landmark_processor import LandmarkProcessor
 from core.state_machine import GestureStateMachine
@@ -15,7 +25,7 @@ def main():
     state_machine = GestureStateMachine()
 
     # Open webcam
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(1)
 
     if not cap.isOpened():
         print("Error: Could not open camera")

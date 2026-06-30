@@ -4,7 +4,17 @@ tests/test_shortcuts.py
 Unit test suite verifying state, registration, storage actions, and 
 execution cooldowns of the MacroEngine.
 """
+import sys
+import os
 
+ROOT = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), "..")
+)
+
+if ROOT not in sys.path:
+    sys.path.insert(0, ROOT)
+
+from core.hand_tracker import HandTracker
 import os
 import sys
 import unittest

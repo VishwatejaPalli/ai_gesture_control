@@ -1,6 +1,16 @@
-import cv2
+import sys
+import os
+
+ROOT = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), "..")
+)
+
+if ROOT not in sys.path:
+    sys.path.insert(0, ROOT)
 
 from core.hand_tracker import HandTracker
+import cv2
+
 from core.landmark_processor import LandmarkProcessor
 
 
@@ -9,7 +19,7 @@ def main():
     tracker = HandTracker()
     processor = LandmarkProcessor()
 
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(1)
 
     if not cap.isOpened():
         print("Cannot open camera")
