@@ -1,0 +1,105 @@
+REFERENCES
+
+[1] V. I. Pavlovic, R. Sharma, and T. S. Huang,
+"Visual Interpretation of Hand Gestures for Human-Computer Interaction: A Review,"
+IEEE Transactions on Pattern Analysis and Machine Intelligence,
+Vol. 19, No. 7, pp. 677-695, 1997.
+
+[2] W. T. Freeman and C. D. Weissman,
+"Television Control by Hand Gestures,"
+Proceedings of IEEE International Workshop on Automatic Face and Gesture Recognition,
+pp. 179-183, 1995.
+
+[3] P. Molchanov, S. Gupta, K. Kim, and J. Kautz,
+"Hand Gesture Recognition with 3D Convolutional Neural Networks,"
+Proceedings of IEEE Conference on Computer Vision and Pattern Recognition Workshops,
+pp. 1-7, 2015.
+
+[4] F. Zhang, V. Bazarevsky, A. Vakunov, A. Tkachenka,
+G. Sung, C. Chang, and M. Grundmann,
+"MediaPipe Hands: On-device Real-time Hand Tracking,"
+arXiv Preprint arXiv:2006.10214, 2020.
+
+[5] Y. Wu and T. S. Huang,
+"Vision-Based Gesture Recognition: A Review,"
+Lecture Notes in Computer Science,
+Vol. 1739, pp. 103-115, 2001.
+
+[6] S. Mitra and T. Acharya,
+"Gesture Recognition: A Survey,"
+IEEE Transactions on Systems, Man, and Cybernetics,
+Part C, Vol. 37, No. 3, pp. 311-324, 2007.
+
+[7] K. O'Hara et al.,
+"Touchless Interaction in Surgery,"
+Communications of the ACM,
+Vol. 57, No. 1, pp. 70-77, 2014.
+
+[8] Z. Ren, J. Yuan, and Z. Zhang,
+"Robust Hand Gesture Recognition Based on Finger-Earth Mover's Distance
+with a Commodity Depth Camera,"
+Proceedings of ACM International Conference on Multimedia,
+pp. 1093-1096, 2013.
+
+[9] P. Wang, W. Li, Z. Gao, C. Tang, and P. Ogunbona,
+"RGB-D Based Human Motion Recognition with Deep Learning,"
+Pattern Recognition,
+Vol. 52, pp. 10-23, 2016.
+
+[10] T. Kim, J. Kim, and S. Ahn,
+"Deep Learning-Based Hand Gesture Recognition for Human-Computer Interaction,"
+Sensors, Vol. 19, No. 18, Article 3826, 2019.
+
+[11] C. Wang, Z. Liu, and S. Y. Chan,
+"A Vision-Based System for Real-Time Hand Gesture Recognition,"
+IEEE Access,
+Vol. 9, pp. 28744-28755, 2021.
+
+OFFICIAL DOCUMENTATION
+
+[12] Google Developers,
+"MediaPipe Documentation,"
+Available: https://developers.google.com/mediapipe
+
+[13] OpenCV Team,
+"OpenCV Documentation,"
+Available: https://docs.opencv.org
+
+[14] Python Software Foundation,
+"Python Documentation,"
+Available: https://docs.python.org/3
+
+[15] NumPy Developers,
+"NumPy Documentation,"
+Available: https://numpy.org/doc
+
+[16] PyAutoGUI Documentation,
+Available: https://pyautogui.readthedocs.io
+
+[17] PyCAW Documentation,
+Available: https://github.com/AndreMiras/pycaw
+
+GITHUB REPOSITORIES
+
+[18] Google MediaPipe GitHub Repository,
+Available: https://github.com/google-ai-edge/mediapipe
+
+[19] OpenCV GitHub Repository,
+Available: https://github.com/opencv/opencv
+
+[20] Project Repository:
+https://github.com/VishwatejaPalli/ai_gesture_control
+
+LEARNING RESOURCES
+
+[21] LearnOpenCV Tutorials,
+Available: https://learnopencv.com
+
+[22] OpenCV Official Tutorials,
+Available: https://opencv.org/get-started
+
+[23] MediaPipe Hand Tracking Tutorial,
+Available: https://www.youtube.com/results?search_query=mediapipe+hand+tracking+tutorial
+
+[24] Computer Vision Tutorials,
+Available: https://www.youtube.com/results?search_query=opencv+python+hand+gesture+recognition

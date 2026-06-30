@@ -1,12 +1,3 @@
-# ePBL Internship Project Report: Gesture AI Toolkit
-
-**Student Name:** [Your Name]
-**Internship Domain:** AI/ML & Computer Vision
-**Supervisor:** [Your Supervisor's Name]
-**Date:** [Date of Submission, e.g., 30 June 2026]
-
----
-
 ## 1. Abstract
 
 This report details the development of the "Gesture AI Toolkit," a real-time human-computer interaction system. The project addresses the limitations of traditional input devices by enabling computer control through hand gestures. The system utilizes a webcam to capture hand movements, which are processed by Google's MediaPipe framework for landmark extraction. A custom-trained PyTorch neural network classifies these landmarks into distinct gestures such as "fist," "palm," and "pointing." These gestures are then mapped to a variety of applications, including an integrated Control Hub for mode-switching, an AR Painter, a virtual mouse, and a media controller for managing playback and volume. The project successfully demonstrates a modular and responsive framework for gesture-based control, achieving **[Your Final Accuracy, e.g., 98.7%]%** accuracy on the training set.

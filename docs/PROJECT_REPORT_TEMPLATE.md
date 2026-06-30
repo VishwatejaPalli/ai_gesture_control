@@ -1,12 +1,3 @@
-# ePBL Internship Project Report: Gesture AI Toolkit
-
-**Student Name:** [Your Name]
-**Internship Domain:** [Your Domain, e.g., AI/ML, Computer Vision]
-**Supervisor:** [Your Supervisor's Name]
-**Date:** [Date of Submission, e.g., 30 June 2026]
-
----
-
 ## 1. Abstract
 
 *A brief summary (150-250 words) of the entire project. It should cover the problem, the solution, the key technologies used, and the main results. Write this section last.*
