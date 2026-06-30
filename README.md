@@ -324,7 +324,7 @@ to quit.
 
 ## Author
 
-**Vishwateja Palli**
+**Vishwateja Palli**,
 **Swargam Akhila**
 
 B.Tech Electronics and Communication Engineering  
