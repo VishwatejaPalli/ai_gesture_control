@@ -128,7 +128,7 @@ The system successfully detects gestures and executes media commands in real tim
 
 Real-time drawing using hand gestures.
 
-![AR Paint](result/ar_snip_1782745686.png)
+![AR Paint](result/drawing.png)
 
 ---
 
@@ -136,15 +136,7 @@ Real-time drawing using hand gestures.
 
 Example of gesture-based freehand drawing.
 
-![Air Drawing](result/ar_snip_1782745688.png)
-
----
-
-### Additional Drawing Example
-
-The generated drawing trajectory.
-
-![Drawing Example](result/ar_snip_1782745983.png)
+![Air Drawing](result/drawing_1.png)
 
 ---
 
@@ -152,7 +144,7 @@ The generated drawing trajectory.
 
 MediaPipe extracts 21 hand landmarks for gesture recognition.
 
-![Hand Detection](result/snapshot_1782810379.png)
+![Hand Detection](result/hand_landmark.png)
 
 ---
 
