@@ -74,9 +74,63 @@ This standalone script implements the AR painting feature. It uses a transparent
 
 ## 5. Results and Discussion
 
-### 5.1. Model Performance
-The trained `GestureNet` model performed exceptionally well on the collected data, reaching a final accuracy of **[Enter Your Final Accuracy Here]**. This high accuracy confirms that the MLP architecture is well-suited for classifying the structured landmark data from MediaPipe.
-*(Optional: If you created a confusion matrix, you can insert it here and discuss any minor misclassifications, e.g., between 'fist' and 'palm' in certain lighting conditions.)*
+### 5.1. Comprehensive MATLAB Benchmark Evaluation
+The trained `GestureNet` model was evaluated on 638 test samples (80/20 stratified split) across the 6 gesture classes (`fist`, `palm`, `peace`, `pinch`, `pointing`, `thumbs_up`).
+
+- **Overall Accuracy:** 100.00% (638/638 correct classifications on test dataset)
+- **Macro Precision / Recall / F1-Score:** 1.0000 / 1.0000 / 1.0000
+- **Weighted Precision / Recall / F1-Score:** 1.0000 / 1.0000 / 1.0000
+- **Inference Latency (Single Frame, CPU):** 0.136 ms per frame (~7,343 FPS throughput)
+
+#### 5.1.1. Training & Validation Curves
+Loss and accuracy curves over training epochs rendered in MATLAB style:
+
+![Training Validation Curves](../result/01_training_validation_curves.png)
+
+#### 5.1.2. Receiver Operating Characteristic (ROC) Curves
+Multi-class One-vs-Rest (OvR) ROC curves:
+
+![ROC Curves](../result/02_roc_curves.png)
+
+#### 5.1.3. Precision-Recall (PR) Curves
+Precision vs. Recall performance per gesture class:
+
+![Precision-Recall Curves](../result/03_precision_recall_curves.png)
+
+#### 5.1.4. Confusion Matrix Heatmaps
+Instance count and normalized percentage confusion matrices:
+
+![Confusion Matrix](../result/04_confusion_matrix.png)
+
+#### 5.1.5. Per-Class Metrics Breakdown
+Precision, Recall, and F1-Score across all gesture classes:
+
+![Per Class Metrics Bar](../result/05_per_class_metrics_bar.png)
+
+#### 5.1.6. Hardware Inference Speed & Throughput Benchmark
+CPU latency and frame throughput across batch sizes:
+
+![Inference Speed Benchmark](../result/06_inference_speed_benchmark.png)
+
+#### 5.1.7. 21 MediaPipe Hand Landmark Feature Sensitivity Ranking
+Permutation feature importance for each of the 21 MediaPipe 3D landmark joints:
+
+![Landmark Importance](../result/07_landmark_importance_sensitivity.png)
+
+#### 5.1.8. Model Confidence Calibration & Reliability Diagram
+Prediction probability calibration and confidence distribution histograms:
+
+![Calibration Reliability](../result/08_model_calibration_reliability.png)
+
+#### 9. Landmark Noise & Camera Jitter Robustness Curve
+Validation accuracy degradation curve under increasing Gaussian noise perturbation ($\sigma = 0.00$ to $0.20$):
+
+![Noise Robustness](../result/09_noise_robustness_curve.png)
+
+#### 10. 2D t-SNE Gesture Feature Space Cluster Manifold
+2D t-SNE projection of the 63-dimensional landmark feature space illustrating clear inter-class separation:
+
+![t-SNE Clusters](../result/10_gesture_embedding_tsne.png)
 
 ### 5.2. Application Functionality
 The applications are highly responsive, with minimal latency between performing a gesture and seeing the result. The gesture mappings proved to be intuitive during testing.

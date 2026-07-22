@@ -42,19 +42,20 @@ class TestMediaController(unittest.TestCase):
         self.controller = MediaController()
 
     @patch('media_control.media_controller.pyautogui')
-    def test_discrete_commands(self, mock_pyautogui):
-        """Verifies specific keys are pressed via PyAutoGUI."""
+    @patch('media_control.media_controller.keyboard')
+    def test_discrete_commands(self, mock_keyboard, mock_pyautogui):
+        """Verifies specific keys are pressed via keyboard and PyAutoGUI."""
         self.controller.play_pause()
-        mock_pyautogui.press.assert_called_with("playpause")
+        mock_keyboard.send.assert_called_with("play/pause media")
 
         self.controller.next_track()
-        mock_pyautogui.press.assert_called_with("nexttrack")
+        mock_keyboard.send.assert_called_with("next track")
 
         self.controller.previous_track()
-        mock_pyautogui.press.assert_called_with("prevtrack")
+        mock_keyboard.send.assert_called_with("previous track")
 
         self.controller.mute()
-        mock_pyautogui.press.assert_called_with("volumemute")
+        mock_keyboard.send.assert_called_with("volume mute")
 
         self.controller.fullscreen()
         mock_pyautogui.press.assert_called_with("f11")

@@ -16,7 +16,7 @@ hands = mp_hands.Hands(
 
 draw = mp.solutions.drawing_utils
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 
 prev_x = 0
 prev_y = 0

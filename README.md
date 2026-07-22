@@ -148,11 +148,39 @@ MediaPipe extracts 21 hand landmarks for gesture recognition.
 
 ---
 
-### Model Training Performance
+### Model Performance & MATLAB Benchmark Suite
 
-Training accuracy and loss curves obtained during model training.
+Standardized publication-quality MATLAB plots detailing classifier performance, multi-class ROC curves, Precision-Recall metrics, confusion matrix, per-class breakdown, CPU inference throughput, landmark feature sensitivity, model calibration, camera jitter robustness, and 2D t-SNE gesture manifold embedding.
 
-![Training Curves](result/training_curves.png)
+#### 1. Training & Validation Loss/Accuracy Curves
+![Training Validation Curves](result/01_training_validation_curves.png)
+
+#### 2. Multi-Class Receiver Operating Characteristic (ROC) Subplot Grid
+![ROC Curves](result/02_roc_curves.png)
+
+#### 3. Multi-Class Precision-Recall (PR) Subplot Grid
+![Precision Recall Curves](result/03_precision_recall_curves.png)
+
+#### 4. Instance Count & Normalized Confusion Matrix Heatmap
+![Confusion Matrix](result/04_confusion_matrix.png)
+
+#### 5. Per-Class Metrics Breakdown (Precision, Recall, F1)
+![Per Class Metrics Bar](result/05_per_class_metrics_bar.png)
+
+#### 6. CPU Hardware Inference Speed & Throughput Benchmark
+![Inference Speed Benchmark](result/06_inference_speed_benchmark.png)
+
+#### 7. 21 MediaPipe Hand Landmark Feature Sensitivity Ranking
+![Landmark Importance](result/07_landmark_importance_sensitivity.png)
+
+#### 8. Model Confidence Calibration & Reliability Diagram
+![Calibration Reliability](result/08_model_calibration_reliability.png)
+
+#### 9. Landmark Noise & Camera Jitter Robustness Curve
+![Noise Robustness](result/09_noise_robustness_curve.png)
+
+#### 10. 2D t-SNE Gesture Feature Space Cluster Manifold
+![t-SNE Clusters](result/10_gesture_embedding_tsne.png)
 
 ---
 

@@ -280,10 +280,20 @@ def main():
     plt.grid(True)
 
     plt.tight_layout()
-    curves_path = "training_curves.png"
+    curves_path = os.path.join("result", "training_curves.png")
+    os.makedirs("result", exist_ok=True)
     plt.savefig(curves_path)
     print(f"\nTraining curve figures saved to '{curves_path}'")
     plt.close()
+
+    # 6. Generate Advanced Benchmark Suite (ROC, PR, Calibration, Latency, Composite Dashboard)
+    try:
+        from benchmark import BenchmarkEvaluator
+        print("\n--- Generating Advanced Benchmark Visualizations & Metrics ---")
+        evaluator = BenchmarkEvaluator(dataset_path=dataset_path, model_path=best_model_path, output_dir="result")
+        evaluator.generate_full_report()
+    except Exception as e:
+        print(f"Warning: Could not generate benchmark visualizations: {e}")
 
 
 if __name__ == "__main__":
